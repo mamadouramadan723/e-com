@@ -24,12 +24,25 @@
         tools:layout="@layout/fragment_cart" />
     <fragment
         android:id="@+id/navigation_wishlist"
-        android:name="com.rmd.ecommerce.ui.account.AccountFragment"
+        android:name="com.rmd.ecommerce.ui.wishlist.WishlistFragment"
         android:label="@string/title_wishlist"
         tools:layout="@layout/fragment_wishlist" />
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.rmd.ecommerce.ui.account.AccountFragment"
         android:label="@string/title_account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_account_update"
+            app:destination="@id/navigation_account_update" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_account_update"
+        android:name="com.rmd.ecommerce.ui.account.UpdateAccountFragment"
+        android:label="@string/title_account_update"
+        tools:layout="@layout/fragment_account_update" >
+        <action
+            android:id="@+id/action_navigation_account_update_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
 </navigation>
