@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>category</key>
+        <value>{
+            "id": 1,
+            "name": "Smartphones",
+            "description": "This contains all smartphones",
+            "imageUrl":
+            "https://firebasestorage.googleapis.com/v0/b/real-state-723.appspot.com/o/default%2Fworkspace.png?alt=media&amp;token=d2624d4b-8656-403b-9d6e-9bbfebaebb25"
+            }
+        </value>
+    </entry>
+    <entry>
+        <key>welcome_message_caps</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>welcome_message</key>
+        <value>Welcome to my awesome app!</value>
+    </entry>
+</defaultsMap>
