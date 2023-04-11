@@ -54,7 +54,7 @@ class StartActivity : AppCompatActivity() {
 
         remoteConfig.fetchAndActivate().addOnSuccessListener {
             logoUrl = remoteConfig.getString("splashImage")
-            duration = remoteConfig.getLong("splashDuration")
+            duration = remoteConfig.getLong("duration")
 
             Glide.with(this).load(logoUrl).into(binding.logo)
 
