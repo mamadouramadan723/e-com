@@ -1,9 +1,9 @@
 package com.rmd.ecommerce.model
 
-data class SubCategory(
+data class ItemCategory(
     var id: Int = 0,
     var name: String = "",
     var imageUrl: String = "",
     var description: String = "",
-    var itemCategoryId: Int = 0
+    var categoryId: ArrayList<Int> = arrayListOf(),
 )

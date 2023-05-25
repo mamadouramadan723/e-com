@@ -1,6 +1,7 @@
 package com.rmd.ecommerce.model
 
-import java.util.*
+import com.rmd.ecommerce.model.address.Place
+import java.util.Date
 
 data class User(
     var id: String = "",
@@ -8,8 +9,8 @@ data class User(
     var email: String = "",
     var imageUrl: String = "",
     var phoneNumber: String = "",
-    var score: Int = 0,
-    var votersNumber: Int = 0,
     var creationDate: Date = Date(),
-    var modificationDate: Date = Date()
+    var modificationDate: Date = Date(),
+    var rating: Rating,
+    var address: Place
 )
